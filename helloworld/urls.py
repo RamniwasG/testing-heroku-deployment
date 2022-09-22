@@ -5,4 +5,4 @@ from . import views
 
 urlpatterns = [
     path('helloworld', views.index),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATICFILES_DIRS, document_root=settings.STATIC_ROOT)
